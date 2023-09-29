@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-23/",
+    "build": "vite build --base=/Etno-dream-project/",
     "preview": "vite preview"
   },
   "devDependencies": {
