@@ -23,14 +23,6 @@
   margin-top: 16px;
 }
 
-.hero-main-photo {
-  max-width: 335px;
-}
-
-.hero-contents {
-  max-width: 335px;
-}
-
 .hero-title {
   color: var(--white);
   font-family: Manrope;
