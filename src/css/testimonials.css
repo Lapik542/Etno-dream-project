@@ -77,14 +77,8 @@
   }
 
   .testimonials {
-    padding-top: 150px;
-    padding-bottom: 150px;
     padding-left: 32px;
     padding-right: 32px;
-  }
-
-  .testimonials-container {
-    max-width: 100%;
   }
 
   .testimonials-title {
@@ -139,5 +133,16 @@
     top: -24px;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .testimonials-list-item:last-child {
+    display: block;
+  }
+
+  .testimonials {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
