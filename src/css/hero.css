@@ -117,11 +117,11 @@
     bottom: 0;
     right: 100px;
   }
-  .star-contents {
-    padding-top: 116px;
-  }
   .map-pic {
     margin-bottom: 50px;
+  }
+  .star-contents {
+    padding-top: 116px;
   }
 }
 
