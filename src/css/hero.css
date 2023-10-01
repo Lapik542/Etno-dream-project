@@ -25,14 +25,16 @@
 
 .container {
   font-family: Manrope;
-  max-width: 375px;
   padding-top: 60px;
   padding-bottom: 80px;
-  padding-left: 20px;
-  padding-right: 20px;
+}
 
-  margin-left: auto;
-  margin-right: auto;
+.hero-main-photo {
+  max-width: 335px;
+}
+
+.hero-contents {
+  max-width: 335px;
 }
 
 .hero-title {
@@ -81,14 +83,11 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
     padding-top: 106px;
     padding-bottom: 100px;
-    padding-left: 32px;
-    padding-right: 32px;
   }
   .hero-main-photo {
-    max-width: 413px;
+    width: 413px;
   }
   .hero-contents {
     max-width: 549px;
@@ -99,7 +98,7 @@
   .hero-side-photos {
     display: flex;
     position: absolute;
-    bottom: -30px;
+    bottom: -10px;
     right: 32px;
   }
 }
@@ -110,11 +109,11 @@
     column-gap: 40px;
   }
   .container {
-    max-width: 1280px;
     padding-top: 100px;
     padding-bottom: 150px;
-    padding-left: 100px;
-    padding-right: 100px;
+  }
+  .hero-main-photo {
+    width: 392px;
   }
   .hero-contents {
     padding-top: 94px;
@@ -122,10 +121,14 @@
   }
   .hero-side-photos {
     width: 142px;
-    bottom: -20px;
+    bottom: 0;
+    right: 100px;
   }
   .star-contents {
     padding-top: 116px;
+  }
+  .map-pic {
+    margin-bottom: 50px;
   }
 }
 
