@@ -23,12 +23,6 @@
   margin-top: 16px;
 }
 
-.container {
-  font-family: Manrope;
-  padding-top: 60px;
-  padding-bottom: 80px;
-}
-
 .hero-main-photo {
   max-width: 335px;
 }
@@ -79,13 +73,12 @@
   position: relative;
   display: flex;
   flex-direction: column-reverse;
+  font-family: Manrope;
+  padding-top: 60px;
+  padding-bottom: 80px;
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    padding-top: 106px;
-    padding-bottom: 100px;
-  }
   .hero-main-photo {
     width: 413px;
   }
@@ -94,6 +87,8 @@
   }
   .hero-container {
     align-items: flex-start;
+    padding-top: 106px;
+    padding-bottom: 100px;
   }
   .hero-side-photos {
     display: flex;
@@ -107,8 +102,6 @@
   .hero-container {
     flex-direction: row;
     column-gap: 40px;
-  }
-  .container {
     padding-top: 100px;
     padding-bottom: 150px;
   }
