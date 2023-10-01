@@ -1,0 +1,92 @@
+/* .section-collection {
+  background-image: url(../img/our-collection/phone/elements-phone.png);
+  background-repeat: no-repeat;
+} */
+.title-collection {
+  color: var(--white, #fcf9f9);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.37;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.list-collection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* .background-image {
+  position: absolute;
+  background-image: url(../img/our-collection/phone/elements-phone.png);
+  background-repeat: no-repeat;
+} */
+.item-collection {
+  display: block;
+}
+.image-collection {
+  width: 100%;
+  border-radius: 4px;
+}
+.container-price {
+  padding-top: 18px;
+}
+.product-name {
+  color: var(--white, #fcf9f9);
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.price {
+  color: rgba(252, 249, 249, 0.4);
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    min-width: 320px;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .item-collection {
+    width: 335px;
+  }
+}
+/* @media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+} */
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+  .list-collection {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+  .item-collection {
+    width: 342px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    min-width: 1280px;
+  }
+  .list-collection {
+    row-gap: 40px;
+  }
+  .item-collection {
+    width: calc((100% - 40px) / 3);
+  }
+}
