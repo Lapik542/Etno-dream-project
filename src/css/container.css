@@ -15,15 +15,15 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: auto;
+    padding-right: auto;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: auto;
+    padding-right: auto;
   }
 }
 @media screen and (min-width: 1440px) {
