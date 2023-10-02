@@ -1,4 +1,8 @@
 /* BASE */
+
+.section-collection {
+  margin-bottom: 80px;
+}
 .container-our-collection {
   max-width: 375px;
   padding-left: 20px;
@@ -76,6 +80,9 @@
 /* TABLET */
 
 @media screen and (min-width: 768px) {
+  .section-collection {
+    margin-bottom: 100px;
+  }
   .container-our-collection {
     min-width: 768px;
     padding-left: 32px;
@@ -107,6 +114,9 @@
 /* DESKTOP 1280PX */
 
 @media screen and (min-width: 1280px) {
+  .section-collection {
+    margin-bottom: 150px;
+  }
   .container-our-collection {
     min-width: 1280px;
     padding-left: 100px;
@@ -132,7 +142,7 @@
 }
 
 /*  DESKTOP 1440PX */
-/* 
+
 @media screen and (min-width: 1440px) {
   .container-our-collection {
     min-width: 1440px;
@@ -149,4 +159,4 @@
   .collection-back-image {
     background-image: url(../img/our-collection/desktop-1440px/elements-collection-1440px@2x.png);
   }
-} */
+}
