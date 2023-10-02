@@ -1,5 +1,9 @@
 /* BASE */
-
+.container-our-collection {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .title-collection {
   color: var(--white, #fcf9f9);
   font-size: 32px;
@@ -25,7 +29,6 @@
   background-repeat: no-repeat;
 }
 .image-collection {
-  width: 100%;
   border-radius: 4px;
 }
 .container-price {
@@ -52,7 +55,7 @@
 /* MOBILE */
 
 @media screen and (min-width: 375px) {
-  .container {
+  .container-our-collection {
     min-width: 320px;
     max-width: 375px;
     margin-left: auto;
@@ -73,8 +76,10 @@
 /* TABLET */
 
 @media screen and (min-width: 768px) {
-  .container {
+  .container-our-collection {
     min-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   .collection-back-image {
     background-position-y: 200px;
@@ -102,8 +107,10 @@
 /* DESKTOP 1280PX */
 
 @media screen and (min-width: 1280px) {
-  .container {
+  .container-our-collection {
     min-width: 1280px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   .collection-back-image {
     background-size: 169px 300px;
@@ -127,7 +134,7 @@
 /*  DESKTOP 1440PX */
 /* 
 @media screen and (min-width: 1440px) {
-  .container {
+  .container-our-collection {
     min-width: 1440px;
   }
   .collection-back-image {
