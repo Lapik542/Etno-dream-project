@@ -12,21 +12,22 @@
 }
 
 @media screen and (min-width: 768px) {
-  .your-order-title {
-    width: 542px;
-    height: 174px;
-  }
-  .your-order-form {
-    width: 508px;
-  }
-  .your-order-input {
-    height: 50px;
-  }
-  .your-order-btn-div {
+  .container {
+    width: 768px;
+    padding-left: auto;
+    padding-right: auto;
   }
   .your-order-background {
+    max-width: 1440px;
+    height: 776px;
+    max-height: 776px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: none,
       url(../img/our-collection/table/girl-our-collection-table.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 @media screen and (max-width: 768px) {
