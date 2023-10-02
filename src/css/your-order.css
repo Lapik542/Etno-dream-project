@@ -10,6 +10,33 @@
   background-position: center;
   background-size: cover;
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: auto;
+    padding-right: auto;
+  }
+  .your-order-background {
+    max-width: 1440px;
+    height: 776px;
+    max-height: 776px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: none,
+      url(../img/our-collection/table/girl-our-collection-table.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .your-order-image {
+    display: none;
+  }
+}
+
 .your-order-title {
   padding-top: 80px;
   padding-left: 20px;
@@ -90,4 +117,24 @@
   border-radius: 15px;
   border: 1px solid #fcf9f999;
   color: #fcf9f9;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: auto;
+    padding-right: auto;
+  }
+  .your-order-background {
+    max-width: 1440px;
+    height: 776px;
+    max-height: 776px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: none,
+      url(../img/our-collection/table/girl-our-collection-table.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
