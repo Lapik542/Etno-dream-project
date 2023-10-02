@@ -1,35 +1,16 @@
 .your-order-background {
   max-width: 1440px;
   height: 550px;
-
+  max-height: 550px;
   margin-left: auto;
   margin-right: auto;
   background-image: none,
     url(../img/our-collection/phone/girl-our-collection-phone.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding-left: auto;
-    padding-right: auto;
-  }
-  .your-order-background {
-    max-width: 1440px;
-    height: 776px;
-    max-height: 776px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: none,
-      url(../img/our-collection/table/girl-our-collection-table.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-}
 @media screen and (max-width: 768px) {
   .your-order-image {
     display: none;
@@ -117,13 +98,23 @@
   border: 1px solid #fcf9f999;
   color: #fcf9f9;
 }
-.your-order-product {
-  width: 638px;
-  height: 521px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  margin-left: 98px;
-  margin-right: 32px;
-  margin-top: 100px;
-  margin-bottom: 79px;
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: auto;
+    padding-right: auto;
+  }
+  .your-order-background {
+    max-width: 1440px;
+    height: 776px;
+    max-height: 776px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: none,
+      url(../img/our-collection/table/girl-our-collection-table.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
