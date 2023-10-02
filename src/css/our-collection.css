@@ -1,7 +1,5 @@
-/* .section-collection {
-  background-image: url(../img/our-collection/phone/elements-phone.png);
-  background-repeat: no-repeat;
-} */
+/* BASE */
+
 .title-collection {
   color: var(--white, #fcf9f9);
   font-size: 32px;
@@ -16,13 +14,15 @@
   flex-direction: column;
   gap: 20px;
 }
-/* .background-image {
-  position: absolute;
-  background-image: url(../img/our-collection/phone/elements-phone.png);
-  background-repeat: no-repeat;
-} */
 .item-collection {
   display: block;
+}
+.collection-back-image {
+  background-position-x: 0;
+  background-position-y: 298px;
+  background-size: 72px 177px;
+  background-image: url(../img/our-collection/phone/elements-phone.png);
+  background-repeat: no-repeat;
 }
 .image-collection {
   width: 100%;
@@ -49,6 +49,8 @@
   letter-spacing: 0.05em;
 }
 
+/* MOBILE */
+
 @media screen and (min-width: 375px) {
   .container {
     min-width: 320px;
@@ -60,13 +62,24 @@
     width: 335px;
   }
 }
-/* @media screen and (min-resolution: 192dpi) and (max-width: 767px),
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-} */
+  .collection-back-image {
+    background-image: url(../img/our-collection/phone/elements-phone@2x.png);
+  }
+}
+
+/* TABLET */
+
 @media screen and (min-width: 768px) {
   .container {
     min-width: 768px;
+  }
+  .collection-back-image {
+    background-position-y: 200px;
+    background-size: 114px 300px;
+    background-image: url(../img/our-collection/table/elements-table.png);
   }
   .list-collection {
     flex-direction: row;
@@ -78,10 +91,23 @@
     width: 342px;
   }
 }
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .collection-back-image {
+    background-image: url(../img/our-collection/table/elements-table@2x.png);
+  }
+}
+
+/* DESKTOP 1280PX */
 
 @media screen and (min-width: 1280px) {
   .container {
     min-width: 1280px;
+  }
+  .collection-back-image {
+    background-size: 169px 300px;
+    background-image: url(../img/our-collection/desktop-1280px/elements-collection-1280px.png);
   }
   .list-collection {
     row-gap: 40px;
@@ -90,3 +116,30 @@
     width: calc((100% - 40px) / 3);
   }
 }
+@media screen and (min-resolution: 192dpi) and (min-width: 128px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .collection-back-image {
+    background-image: url(../img/our-collection/desktop-1280px/elements-collection-1280px@2x.png);
+  }
+}
+
+/*  DESKTOP 1440PX */
+/* 
+@media screen and (min-width: 1440px) {
+  .container {
+    min-width: 1440px;
+  }
+  .collection-back-image {
+    background-size: 169px 300px;
+    background-image: url(../img/our-collection/desktop-1440px/elements-collection-1440px.png);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .collection-back-image {
+    background-image: url(../img/our-collection/desktop-1440px/elements-collection-1440px@2x.png);
+  }
+} */
