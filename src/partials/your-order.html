@@ -1,76 +1,62 @@
-<section class="order-section">
-  <div class="order-banner"></div>
-  <div class="order-container container">
-    <div class="order-form-wraper">
-      <div class="order-thumb">
-        <img
-          class="order-img"
-          srcset="
-            ./img/your-order/order-photo-desk.jpg,
-            ./img/your-order/order-photo-desk@x2.jpg   1048w,
-            ./img/your-order/order-photo-tablet.jpg     638w,
-            ./img/your-order/order-photo-tablet@x2.jpg 1276w
-          "
-          sizes="(min-width: 1280px) 524px, (min-width: 768px) 638px, 
-                    "
-          src="./img/your-order/order-photo-desk.jpg"
-          alt="Фото вышиванки"
-          width="524"
-        />
-      </div>
-      <div class="form-wraper">
-        <h2 class="order-header">
-          <span class="order-header-accent">Your order</span> is our priority:
-          Personalized approach and quality of service
-        </h2>
-        <form class="order-form">
-          <div class="order-form-container">
-            <div class="order-input-container">
-              <input
-                class="order-form-input"
-                type="text"
-                id="user-name"
-                name="user-name"
-                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
-                required
-                placeholder="Enter your full name"
-              />
-            </div>
-          </div>
-          <div class="order-form-container">
-            <div class="order-input-container">
-              <input
-                class="order-form-input"
-                type="text"
-                id="user-email"
-                name="user-email"
-                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ@.]+"
-                required
-                placeholder="Enter your email"
-              />
-            </div>
-          </div>
-          <div class="order-form-comment-wraper">
-            <textarea
-              class="order-form-comment"
-              name="user-comment"
-              id="user-comment"
-              placeholder="Comments"
-            ></textarea>
-          </div>
-          <button class="order-form-button" type="submit">
-            Send
-            <svg
-              class="order-button-icon"
-              width="24"
-              height="24"
-              aria-label="subscribe icon"
-            >
-              <use href="/src/img/your-order/icon.svg#id=icon-arrow"></use>
-            </svg>
-          </button>
-        </form>
-      </div>
+<section class="section-your-order section">
+  <div class="image-girl-background"></div>
+  <div class="container container-your-order">
+    <div class="container-order-form">
+      <h2 class="title-your-order" id="your-order">
+        <span class="title-yellow">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form class="form-order">
+        <div class="input-box">
+          <input
+            class="input"
+            id="user-name"
+            name="user-name"
+            type="text"
+            pattern="[A-Za-z0-9]"
+            placeholder=" Enter your full name"
+          />
+        </div>
+        <div class="input-box">
+          <input
+            class="input"
+            type="email"
+            name="email"
+            id="email"
+            pattern="(?=.*[a-z])(?=.*[A-Z])"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div class="comment-box">
+          <textarea
+            class="comment"
+            name="user-comment"
+            placeholder="Comments"
+            id="user-comment"
+          ></textarea>
+        </div>
+        <button class="button-send" type="submit">
+          Send
+          <svg class="send-svg" width="26" height="10">
+            <use href="/img/icon.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="img-girl-container">
+      <img
+        class="image-girl"
+        srcset="
+          /img/your-order/desktop/Rectangle.jpg          524w,
+          /img/your-order/desktop/Rectangle@2x.jpg      1048w,
+          /img/your-order/table/Rectangle-tablet.jpg     638w,
+          /img/your-order/table/Rectangle-tablet@2x.jpg 1276w
+        "
+        sizes="(min-width: 1280px) 524px, (max-width: 1280px) 638px"
+        src="/img/your_order/Rectangle.jpg"
+        alt="girl"
+      />
     </div>
   </div>
 </section>

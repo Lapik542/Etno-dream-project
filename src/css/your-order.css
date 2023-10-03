@@ -1,278 +1,212 @@
-/* =============== MOBILE ===============*/
-
-.order-section {
-  background-color: #1c2225;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.order-banner {
-  width: 100%;
-  min-height: 550px;
-  margin-bottom: 80px;
-  background-image: url(../img/our-collection/phone/girl-our-collection-phone.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-@media screen and (min-resolution: 192dpi) and (min-width: 320px),
-  screen and (min-resolution: 2dppx) and (min-width: 320px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
-  .order-banner {
-    background-image: url(../img/our-collection/phone/girl-our-collection-phone@2x.jpg);
-  }
-}
-
-.order-thumb {
-  display: none;
-}
-
-.order-header {
-  margin-bottom: 40px;
-
-  color: #fcf9f9;
-
-  font-family: Manrope;
+.title-your-order {
+  color: var(--white, #fcf9f9);
   font-size: 32px;
+
   font-weight: 500;
   line-height: 1.37;
   letter-spacing: -0.03em;
+  margin-bottom: 40px;
 }
-
-.order-header-accent {
+.title-yellow {
   color: #ecd979;
 }
 
-.order-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.order-form-container {
-  width: 100%;
-}
-
-.order-form-input {
-  width: 100%;
+.input,
+.comment {
+  width: 335px;
   padding: 14px 16px;
-  margin-bottom: 26px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
 
   background-color: transparent;
+  outline: transparent;
 
-  color: rgba(252, 249, 249, 0.5);
-  font-size: 14px;
-  font-weight: 400;
+  color: var(--white, #fcf9f9);
+  font-size: 16px;
+
+  line-height: normal;
   letter-spacing: -0.02em;
-
+}
+.input {
+  height: 40px;
   border-radius: 15px;
-  border: 1px solid rgba(252, 249, 249, 0.1);
 }
-
-.order-form-input:focus {
-  border-color: rgba(252, 249, 249, 0.6);
+.input:focus,
+.input:hover,
+.comment:focus,
+.comment:hover {
+  border: 1px solid rgba(252, 249, 249, 0.6);
 }
-
-.order-form-comment-wraper {
-  width: 100%;
-}
-
-.order-form-comment {
-  width: 100%;
-  min-height: 196px;
-  margin-bottom: 40px;
-  padding: 14px 16px;
-  align-items: flex-start;
-  gap: 8px;
-  flex: 1 0 0;
-  align-self: stretch;
-
-  background-color: transparent;
-
-  color: rgba(252, 249, 249, 0.5);
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: -0.02em;
-
+.comment {
+  height: 196px;
   border-radius: 8px;
-  border: 1px solid rgba(252, 249, 249, 0.1);
+  resize: none;
 }
-
-.order-form-button {
+.button-send {
   display: flex;
-  margin: 0 auto;
-  max-width: 145px;
-  height: 49px;
-  padding: 14px 36px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-
+  padding: 14px 36px;
   background-color: transparent;
-
-  color: #fcf9f9;
-  font-family: Manrope;
+  color: var(--white, #fcf9f9);
   font-size: 14px;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
 
+  font-weight: 600;
+
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+  outline: transparent;
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
 }
+.send-svg {
+  fill: #ecd979;
+}
+.input-box {
+  margin-bottom: 20px;
+}
+.comment-box {
+  margin-bottom: 40px;
+}
+.button-send:focus,
+.button-send:hover {
+  border: 1px solid var(--yellow, #ecd979);
+}
+.image-girl-background {
+  height: 550px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/our-collection/phone/girl-our-collection-phone.jpg);
+  margin: 0 auto;
+}
 
-/* =============== TABLET ===============*/
-
-@media screen and (min-width: 768px) {
-  .order-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-
+@media screen and (max-width: 767px) {
+  .image-girl {
+    display: none;
+  }
+  .button-send {
+    margin: 0 auto;
+  }
+  .image-girl-background {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .image-girl-background {
+    background-image: url(../img/our-collection/phone/girl-our-collection-phone@2x.jpg);
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .image-girl-background {
+    background-image: url(../img/our-collection/table/girl-our-collection-table@2x.jpg);
+  }
+  .section-your-order::after {
     background-image: url(../img/your-order/element-table.png);
-    background-repeat: no-repeat;
-    background-position: bottom -116px left 0px;
-  }
-
-  @media screen and (min-resolution: 192dpi) and (min-width: 768px),
-    screen and (min-resolution: 2dppx) and (min-width: 768px),
-    screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-    .order-section {
-      background-image: url(/src/img/your-order/ornament@x2.png);
-      background-repeat: no-repeat;
-      background-position: bottom -116px left 0px;
-      background-size: 545px 484px;
-    }
-  }
-
-  .order-banner {
-    width: 100%;
-    min-height: 776px;
-    margin-bottom: 100px;
-
-    background-image: url(../img/our-collection/table/girl-our-collection-table.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  @media screen and (min-resolution: 192dpi) and (min-width: 768px),
-    screen and (min-resolution: 2dppx) and (min-width: 768px),
-    screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-    .order-banner {
-      background-image: url(../img/our-collection/table/girl-our-collection-table@2x.jpg);
-    }
-  }
-
-  .order-form-wraper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .order-thumb {
-    display: block;
-    box-sizing: border-box;
-    border-radius: 4px;
-    object-fit: cover;
-    order: 3;
-  }
-
-  .order-header {
-    margin-bottom: 40px;
-    max-width: 542px;
-
-    color: #fcf9f9;
-
-    font-family: Manrope;
-    font-size: 44px;
-    font-weight: 500;
-    line-height: 1.32;
-    letter-spacing: -0.03em;
-  }
-
-  .order-form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .order-form-container {
-    max-width: 508px;
-  }
-
-  .order-form-iput {
-    padding: 14px 16px;
-    margin-bottom: 20px;
-
-    background-color: transparent;
-
-    font-size: 16px;
-  }
-
-  .order-form-comment {
-    width: 100%;
-    width: 508px;
-
-    font-size: 16px;
-  }
-
-  .order-form-button {
-    margin: 0 0;
-    font-size: 16px;
-    margin-bottom: 100px;
   }
 }
 
-/* =============== DESKTOP ===============*/
+@media screen and (min-width: 768px) {
+  .image-girl-background {
+    background-image: url(../img/our-collection/table/girl-our-collection-table.jpg);
+    height: 776px;
+    margin-bottom: 100px;
+  }
+
+  .section-your-order {
+    position: relative;
+    padding-bottom: 129px;
+  }
+  .section-your-order::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 50px;
+    width: 545px;
+    height: 484px;
+    background-image: url(../img/your-order/element-table@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .button-send {
+    margin-bottom: 100px;
+  }
+  .input {
+    width: 508px;
+    height: 50px;
+  }
+  .comment {
+    width: 508px;
+  }
+
+  .title-your-order {
+    max-width: 542px;
+    font-size: 44px;
+    line-height: 1.31;
+    letter-spacing: -1.32px;
+  }
+  .image-girl {
+    margin-left: auto;
+    width: 638px;
+    height: 521px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .image-girl-background {
+    background-image: url(../img/our-collection/desktop-1280px/girl-our-collection-desktop-1280px.jpg);
+  }
+  .section-your-order::after {
+    background-image: url(../img/our-collection/desktop-1280px/girl-our-collection-desktop-1280px@2x.jpg);
+  }
+}
 
 @media screen and (min-width: 1280px) {
-  .order-section {
-    padding-top: 75px;
-    padding-bottom: 75px;
-
-    background-image: url(/src/img/your-order/ornament.png);
-  }
-
-  @media screen and (min-resolution: 192dpi) and (min-width: 1280px),
-    screen and (min-resolution: 2dppx) and (min-width: 1280px),
-    screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
-    .order-section {
-      background-image: url(/src/img/your-order/ornament@x2.png);
-    }
-  }
-
-  .order-banner {
-    width: 100%;
-    min-height: 776px;
+  .image-girl-background {
+    background-image: url(../img/our-collection/desktop-1440px/girl-our-collection-desktop-1440px.jpg);
+    height: 776px;
     margin-bottom: 150px;
-
-    background-image: url(../img/our-collection/desktop-1280px/girl-our-collection-desktop-1280px.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
-
-  @media screen and (min-resolution: 192dpi) and (min-width: 1280px),
-    screen and (min-resolution: 2dppx) and (min-width: 1280px),
-    screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
-    .order-banner {
-      background-image: url(../img/our-collection/desktop-1280px/girl-our-collection-desktop-1280px@2x.jpg);
-    }
+  .title-your-order {
+    width: 666px;
   }
-
-  .order-form-wraper {
-    position: relative;
+  .container-your-order {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+  .image-girl {
+    height: 521px;
   }
 
-  .order-thumb {
+  .button-send {
+    margin-bottom: 0;
+  }
+
+  .section-your-order {
+    position: relative;
+    padding-bottom: 75px;
+  }
+
+  .img-girl-container {
+    position: relative;
+    z-index: 2;
+  }
+  .section-your-order::after {
     position: absolute;
-    left: -37px;
-    width: 524px;
-    order: 0;
-  }
-
-  .form-wraper {
-    padding-left: 538px;
+    content: '';
+    left: 0;
+    z-index: 1;
+    bottom: 75px;
+    width: 545px;
+    height: 484px;
+    background-image: url(../img/your-order/desktop/element-desktop1280px.png);
+    background-repeat: no-repeat;
   }
 }
