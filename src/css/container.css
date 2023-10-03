@@ -1,4 +1,12 @@
-/* @media screen and (min-width: 375px) and (max-width: 767px) {
+.container {
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .container {
     width: 375px;
     margin-left: auto;
@@ -26,4 +34,4 @@
   .container {
     width: 1440px;
   }
-} */
+}
