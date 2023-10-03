@@ -1,140 +1,214 @@
-.your-order-background {
-  max-width: 1440px;
-  height: 550px;
-  max-height: 550px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: none,
-    url(../img/our-collection/phone/girl-our-collection-phone.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-@media screen and (min-width: 768px) {
-  .your-order-container {
-    width: 768px;
-    padding-left: auto;
-    padding-right: auto;
-  }
-  .your-order-background {
-    max-width: 1440px;
-    height: 776px;
-    max-height: 776px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: none,
-      url(../img/our-collection/table/girl-our-collection-table.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .your-order-image {
-    display: none;
-  }
-}
-
-.your-order-title {
-  padding-top: 80px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.your-order-h2 {
-  color: var(--white);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: Manrope;
+.title-your-order {
+  color: var(--white, #fcf9f9);
   font-size: 32px;
-  font-style: normal;
+
   font-weight: 500;
-  line-height: 44px;
-  letter-spacing: -0.96px;
-  padding-left: 20px;
+  line-height: 1.37;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
 }
-.your-order-span {
-  color: var(--yellow);
-}
-.your-order-form {
-  padding-top: 40px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.your-order-input {
-  display: flex;
-  width: 100%;
-  padding: 14px 16px;
-  align-items: flex-start;
-  gap: 8px;
-  border-radius: 15px;
-  border: 1px solid rgba(252, 249, 249, 0.1);
-  background-color: transparent;
-  margin-bottom: 20px;
-}
-.your-order-textarea {
-  padding-right: 20px;
-  padding-left: 20px;
-  width: 100%;
-  height: 196px;
-  background-color: transparent;
-  border-radius: 15px;
-  border: 1px solid rgba(252, 249, 249, 0.1);
-  padding: 14px 16px;
-  color: #fcf9f9;
-}
-.your-order-input:focus {
-  border-radius: 15px;
-  border: 1px solid #fcf9f999;
-  color: #fcf9f9;
+.title-yellow {
+  color: #ecd979;
 }
 
-.your-order-btn-div {
-  margin-top: 40px;
-  margin-right: 115px;
-  margin-left: 115px;
+.input,
+.comment {
+  width: 335px;
+  padding: 14px 16px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+
+  background-color: transparent;
+  outline: transparent;
+
+  color: var(--white, #fcf9f9);
+  font-size: 16px;
+
+  line-height: normal;
+  letter-spacing: -0.02em;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.your-order-btn {
-  width: 145px;
-  height: 49px;
+.input {
+  height: 40px;
+  border-radius: 15px;
+}
+.input:focus,
+.input:hover,
+.comment:focus,
+.comment:hover {
+  border: 1px solid rgba(252, 249, 249, 0.6);
+}
+.comment {
+  height: 196px;
+  border-radius: 8px;
+  resize: none;
+}
+.button-send {
   display: flex;
-  height: 49px;
-  padding: 14px 36px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  padding: 14px 36px;
   background-color: transparent;
-  color: #fcf9f9;
+  color: var(--white, #fcf9f9);
+  font-size: 14px;
+
+  font-weight: 600;
+
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+  outline: transparent;
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
+  transition: border-color 0.25s linear;
 }
-.your-order-btn:focus {
-  border-radius: 15px;
-  border: 1px solid #fcf9f999;
-  color: #fcf9f9;
+.send-svg {
+  fill: #ecd979;
 }
-.your-order-btn:hover {
-  border-radius: 15px;
-  border: 1px solid #fcf9f999;
-  color: #fcf9f9;
+.input-box {
+  margin-bottom: 20px;
+}
+.comments-box {
+  margin-bottom: 40px;
+}
+.button-send:focus,
+.button-send:hover {
+  border: 1px solid var(--yellow, #ecd979);
+}
+.image-girl-background {
+  height: 550px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/our-collection/phone/girl-our-collection-phone.jpg);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .image-girl {
+    display: none;
+  }
+  .button-send {
+    margin: 0 auto;
+  }
+  .image-girl-background {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .image-girl-background {
+    background-image: url(../img/our-collection/phone/girl-our-collection-phone@2x.jpg);
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .image-girl-background {
+    background-image: url(../img/our-collection/table/girl-our-collection-table@2x.jpg);
+  }
+  .section-your-order::after {
+    background-image: url(../img/your-order/element-table.png);
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .your-order-container {
-    width: 768px;
-    padding-left: auto;
-    padding-right: auto;
-  }
-  .your-order-background {
-    max-width: 1440px;
+  .image-girl-background {
+    background-image: url(../img/our-collection/table/girl-our-collection-table.jpg);
     height: 776px;
-    max-height: 776px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: none,
-      url(../img/our-collection/table/girl-our-collection-table.jpg);
+    margin-bottom: 100px;
+  }
+
+  .section-your-order {
+    position: relative;
+    padding-bottom: 129px;
+  }
+  .section-your-order::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 50px;
+    width: 545px;
+    height: 484px;
+    background-image: url(../img/your-order/element-table@2x.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-size: contain;
+  }
+  .button-send {
+    margin-bottom: 100px;
+  }
+  .input {
+    width: 508px;
+    height: 50px;
+  }
+  .comment {
+    width: 508px;
+  }
+
+  .title-your-order {
+    max-width: 542px;
+    font-size: 44px;
+    line-height: 1.31;
+    letter-spacing: -1.32px;
+  }
+  .image-girl {
+    margin-left: auto;
+    width: 638px;
+    height: 521px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .image-girl-background {
+    background-image: url(../img/our-collection/desktop-1280px/girl-our-collection-desktop-1280px.jpg);
+  }
+  .section-your-order::after {
+    background-image: url(../img/our-collection/desktop-1280px/girl-our-collection-desktop-1280px@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .image-girl-background {
+    background-image: url(../img/our-collection/desktop-1440px/girl-our-collection-desktop-1440px.jpg);
+    height: 776px;
+    margin-bottom: 150px;
+  }
+  .title-your-order {
+    width: 666px;
+  }
+  .container-your-order {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+  .image-girl {
+    height: 521px;
+  }
+
+  .button-send {
+    margin-bottom: 0;
+  }
+
+  .section-your-order {
+    position: relative;
+    padding-bottom: 75px;
+  }
+
+  .img-girl-container {
+    position: relative;
+    z-index: 2;
+  }
+  .section-your-order::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    z-index: 1;
+    bottom: 75px;
+    width: 545px;
+    height: 484px;
+    background-image: url(../img/your-order/desktop/element-desktop1280px.png);
+    background-repeat: no-repeat;
   }
 }

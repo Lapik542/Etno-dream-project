@@ -3,10 +3,17 @@
   max-width: 375px;
   min-height: 649px;
   padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(../img/footer/phone/phone-footer.png);
   background-size: 100% auto;
   background-position: bottom;
   background-repeat: no-repeat;
+  border-top: 1px solid rgba(252, 249, 249, 0.1);
+}
+.footer-main-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .footer-list {
   display: flex;
@@ -64,6 +71,7 @@
   }
   .footer-main-wrapper {
     max-width: 591px;
+    padding-left: 32px;
     padding-right: 0;
   }
   .footer-list {
@@ -98,7 +106,7 @@
   }
   .footer-main-wrapper {
     max-width: 854px;
-    padding-right: 0;
+    padding-left: 100px;
   }
   .footer-list {
     margin-bottom: 117px;
@@ -119,3 +127,19 @@
   }
 }
 /*? /DESKTOP STYLE */
+
+/*? DESKTOP STYLE 2K */
+@media screen and (min-width: 1440px) {
+  .footer-section {
+    max-width: 2560px;
+    background-image: url(../img/footer/desktop1440px/1440-footer.png);
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .footer-section {
+    background-image: url(../img/footer/desktop1440px/1440-footer@2x.png);
+  }
+}
+/*? /DESKTOP STYLE 2K */

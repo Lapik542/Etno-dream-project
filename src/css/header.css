@@ -126,8 +126,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 0;
+    padding-top: 20px;    
 }
 
 .logo {    
@@ -216,8 +215,7 @@
     }
     .menu-list {
         margin-left: 60px;
-        display: flex;
-        flex-direction: row;            
+        display: flex;                    
         gap: 25px;
     }
     .button-burger-menu {
@@ -246,7 +244,39 @@
     .size-icons:hover,
     .size-icons:focus {
         border-color: var(--yellow, #ECD979);
-    }  
+    }
+    
+        /* ===== animation ====== */
+
+    .logo {
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+        
+    }
+
+    .logo:hover,
+    .logo:focus {
+        /* ===== neon тень ====== */
+
+        /* box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+        1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+        2px 4px 8px 0px rgba(0, 255, 255, 0.7),
+        2px 4px 16px 0px rgba(0, 255, 255, 0.7); */
+        
+        /* ===== вращение ====== */
+        transform: rotate(360deg);
+        
+    }
+
+    .icons {
+        transition: filter 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .size-icons:hover .icons,
+    .size-icons:focus .icons {        
+        filter: drop-shadow(4px 4px 2px #ECD979);
+        
+    }
+        /* ===== / animation ====== */
 
 }
 

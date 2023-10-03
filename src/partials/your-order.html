@@ -1,53 +1,62 @@
-<section class="your-order">
-  <div class="your-order-background"></div>
-  <div class="your-order-title">
-    <h2 class="your-order-h2">
-      <span class="your-order-span">Your order</span> is our priority:
-      Personalized approach and quality of service
-    </h2>
-  </div>
-  <div class="your-order-form">
-    <form class="your-order-form">
-      <div>
-        <input
-          class="your-order-input"
-          type="text"
-          name="full-name"
-          id="full-name"
-          placeholder="Enter your full name"
-        />
-        <input
-          class="your-order-input"
-          type="email"
-          name="your-email"
-          id="your-email"
-          placeholder="Enter your email"
-        />
-      </div>
-      <div>
-        <textarea
-          class="your-order-textarea"
-          name="your-email"
-          id="your-email"
-          rows="10"
-          placeholder="Comments"
-        ></textarea>
-      </div>
-    </form>
-  </div>
-  <div class="your-order-btn-div">
-    <button class="your-order-btn" type="submit">
-      Send
-      <svg class="btn-icon" width="26" height="10">
-        <use href="./img/elements.svg#icon-arrow"></use>
-      </svg>
-    </button>
-  </div>
-  <div class="your-order-image">
-    <img
-      class="your-order-product"
-      src="./img/your order/table/vest-table.jpg"
-      alt="product-image"
-    />
+<section class="section-your-order section" id="5">
+  <div class="image-girl-background"></div>
+  <div class="container container-your-order">
+    <div class="container-order-form">
+      <h2 class="title-your-order" id="your-order">
+        <span class="title-yellow">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form class="form-order">
+        <div class="input-box">
+          <input
+            class="input"
+            id="user-name"
+            name="user-name"
+            type="text"
+            pattern="[A-Za-z0-9]"
+            placeholder=" Enter your full name"
+          />
+        </div>
+        <div class="input-box">
+          <input
+            class="input"
+            type="email"
+            name="email"
+            id="email"
+            pattern="(?=.*[a-z])(?=.*[A-Z])"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div class="comments-box">
+          <textarea
+            class="comment"
+            name="user-comment"
+            placeholder="Comments"
+            id="user-comment"
+          ></textarea>
+        </div>
+        <button class="button-send" type="submit">
+          Send
+          <svg class="send-svg" width="26" height="10">
+            <use href="/img/icon.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="img-girl-container">
+      <img
+        class="image-girl"
+        srcset="
+          /img/your-order/desktop/Rectangle.jpg          524w,
+          /img/your-order/desktop/Rectangle@2x.jpg      1048w,
+          /img/your-order/table/Rectangle-tablet.jpg     638w,
+          /img/your-order/table/Rectangle-tablet@2x.jpg 1276w
+        "
+        sizes="(min-width: 1280px) 524px, (max-width: 1280px) 638px"
+        src="/img/your_order/Rectangle.jpg"
+        alt="girl"
+      />
+    </div>
   </div>
 </section>
