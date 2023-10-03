@@ -3,6 +3,8 @@
   max-width: 375px;
   min-height: 649px;
   padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(../img/footer/phone/phone-footer.png);
   background-size: 100% auto;
   background-position: bottom;
