@@ -1,55 +1,76 @@
-<section class="your-order">
-  <div class="your-order-background"></div>
-  <div class="your-order-title">
-    <h2 class="your-order-h2">
-      <span class="your-order-span">Your order</span> is our priority:
-      Personalized approach and quality of service
-    </h2>
-  </div>
-  <div class="your-order-desktop-container">
-    <div class="your-order-form">
-      <form class="your-order-form">
-        <div>
-          <input
-            class="your-order-input"
-            type="text"
-            name="full-name"
-            id="full-name"
-            placeholder="Enter your full name"
-          />
-          <input
-            class="your-order-input"
-            type="email"
-            name="your-email"
-            id="your-email"
-            placeholder="Enter your email"
-          />
-        </div>
-        <div>
-          <textarea
-            class="your-order-textarea"
-            name="your-email"
-            id="your-email"
-            rows="10"
-            placeholder="Comments"
-          ></textarea>
-        </div>
-      </form>
-    </div>
-    <div class="your-order-btn-div">
-      <button class="your-order-btn" type="submit">
-        Send
-        <svg class="btn-icon" width="26" height="10">
-          <use href="./img/elements.svg#icon-arrow"></use>
-        </svg>
-      </button>
-    </div>
-    <div class="your-order-image">
-      <img
-        class="your-order-product"
-        src="./img/your order/table/vest-table.jpg"
-        alt="product-image"
-      />
+<section class="order-section">
+  <div class="order-banner"></div>
+  <div class="order-container container">
+    <div class="order-form-wraper">
+      <div class="order-thumb">
+        <img
+          class="order-img"
+          srcset="
+            ./img/your-order/order-photo-desk.jpg,
+            ./img/your-order/order-photo-desk@x2.jpg   1048w,
+            ./img/your-order/order-photo-tablet.jpg     638w,
+            ./img/your-order/order-photo-tablet@x2.jpg 1276w
+          "
+          sizes="(min-width: 1280px) 524px, (min-width: 768px) 638px, 
+                    "
+          src="./img/your-order/order-photo-desk.jpg"
+          alt="Фото вышиванки"
+          width="524"
+        />
+      </div>
+      <div class="form-wraper">
+        <h2 class="order-header">
+          <span class="order-header-accent">Your order</span> is our priority:
+          Personalized approach and quality of service
+        </h2>
+        <form class="order-form">
+          <div class="order-form-container">
+            <div class="order-input-container">
+              <input
+                class="order-form-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+                required
+                placeholder="Enter your full name"
+              />
+            </div>
+          </div>
+          <div class="order-form-container">
+            <div class="order-input-container">
+              <input
+                class="order-form-input"
+                type="text"
+                id="user-email"
+                name="user-email"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ@.]+"
+                required
+                placeholder="Enter your email"
+              />
+            </div>
+          </div>
+          <div class="order-form-comment-wraper">
+            <textarea
+              class="order-form-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Comments"
+            ></textarea>
+          </div>
+          <button class="order-form-button" type="submit">
+            Send
+            <svg
+              class="order-button-icon"
+              width="24"
+              height="24"
+              aria-label="subscribe icon"
+            >
+              <use href="./img/icons/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
