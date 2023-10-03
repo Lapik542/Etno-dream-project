@@ -84,7 +84,7 @@
     margin-bottom: 100px;
   }
   .container-our-collection {
-    min-width: 768px;
+    width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -118,7 +118,7 @@
     margin-bottom: 150px;
   }
   .container-our-collection {
-    min-width: 1280px;
+    width: 1280px;
     padding-left: 100px;
     padding-right: 100px;
   }
@@ -145,7 +145,7 @@
 
 @media screen and (min-width: 1440px) {
   .container-our-collection {
-    min-width: 1440px;
+    width: 1440px;
   }
   .collection-back-image {
     background-size: 169px 300px;
