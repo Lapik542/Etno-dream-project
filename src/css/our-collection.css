@@ -46,6 +46,7 @@
   line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  margin-bottom: 8px;
 }
 .price {
   color: rgba(252, 249, 249, 0.4);
