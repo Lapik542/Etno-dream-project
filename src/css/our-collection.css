@@ -89,6 +89,13 @@
     padding-left: 32px;
     padding-right: 32px;
   }
+  .title-collection {
+    color: var(--white, #fcf9f9);
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.45;
+    letter-spacing: 0.03em;
+  }
   .collection-back-image {
     background-position-y: 200px;
     background-size: 114px 300px;
