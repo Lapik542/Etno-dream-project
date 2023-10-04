@@ -13,14 +13,6 @@
   }
 }
 
-/* .about-us-container {
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 80px;
-  padding: 0 20px 80px 20px;
-} */
-
 .about-wrap-flex {
   padding-bottom: 80px;
 }
@@ -31,8 +23,6 @@
   font-weight: 500;
   line-height: 1.37;
   letter-spacing: -0.03em;
-  /* margin-top: 80px;
-  margin-bottom: 40px; */
 }
 
 .about-us-text-wrap {
@@ -42,7 +32,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  /* justify-content: center; */
   align-items: center;
   margin-bottom: 50px;
 }
@@ -52,6 +41,10 @@
   font-size: 14px;
   line-height: normal;
   letter-spacing: -0.04em;
+}
+
+.about-us-img {
+  border-radius: 4px;
 }
 
 @media screen and (min-width: 768px) {
