@@ -14,6 +14,11 @@
 }
 
 .about-wrap-flex {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 80px;
 }
 
@@ -62,6 +67,9 @@
   }
 
   .about-wrap-flex {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
     padding-bottom: 100px;
   }
 
@@ -97,6 +105,9 @@
   }
 
   .about-wrap-flex {
+    max-width: 1280px;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-bottom: 150px;
     display: flex;
     align-items: center;
@@ -129,6 +140,7 @@
   }
 
   .about-wrap-flex {
+    max-width: 1440px;
     padding-bottom: 150px;
     display: flex;
     align-items: center;
