@@ -126,7 +126,7 @@
     margin-bottom: 150px;
   }
   .container-our-collection {
-    min-width: 1280px;
+    min-width: 1080px;
     padding-left: 100px;
     padding-right: 100px;
   }
@@ -153,7 +153,7 @@
 
 @media screen and (min-width: 1440px) {
   .container-our-collection {
-    min-width: 1440px;
+    min-width: 1090px;
   }
   .collection-back-image {
     background-size: 169px 300px;
