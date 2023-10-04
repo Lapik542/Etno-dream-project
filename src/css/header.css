@@ -113,6 +113,8 @@
     /* ===========  /   MOBILE MENU ============ */
 }
 
+/*   Base 0px  + */
+
 .site-nav {
     color: var(--white, #FCF9F9);
     text-transform: uppercase;
@@ -163,7 +165,7 @@
     border-radius: 15px;
     border: 1px solid rgba(252, 249, 249, 0.10);
     background: rgba(252, 249, 249, 0.10);
-    line-height: 0;
+    line-height: 0; /* сброс дефолта <a> */
     
 }
 .icons {
@@ -191,7 +193,7 @@
         padding: 14px 28px;
         font-size: 14px;
         line-height: 1.43;
-        white-space: nowrap;           
+                  
 
     }
     .mobile-menu-btn-close {
