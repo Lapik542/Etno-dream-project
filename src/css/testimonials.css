@@ -136,10 +136,10 @@
   .testimonials-list-item:last-child {
     display: block;
   }
-}
 
-.testimonials-list-item {
-  width: calc(100% - 52px / 3);
+  .testimonials-list-item {
+    width: calc((100% - 52px) / 3);
+  }
 }
 
 @media screen and (min-width: 1440px) {
