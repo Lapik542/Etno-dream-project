@@ -97,7 +97,7 @@
     letter-spacing: 0.03em;
   }
   .collection-back-image {
-    background-position-y: 200px;
+    background-position-y: 100px;
     background-size: 114px 300px;
     background-image: url(../img/our-collection/table/elements-table.png);
   }
