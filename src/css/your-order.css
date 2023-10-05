@@ -79,7 +79,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../img/our-collection/phone/girl-our-collection-phone.jpg);
+  background-image: url(../img/our-collection/table/girl-our-collection-table.jpg);
   margin: 0 auto;
 }
 
@@ -98,14 +98,14 @@
   screen and (min-resolution: 2dppx) and (max-width: 767px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .image-girl-background {
-    background-image: url(../img/our-collection/phone/girl-our-collection-phone@2x.jpg);
+    background-image: url(../img/our-collection/table/girl-our-collection-table@2x.jpg);
   }
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
   .image-girl-background {
-    background-image: url(../img/our-collection/table/girl-our-collection-table@2x.jpg);
+    background-image: url(../img/our-collection/desktop-1280px/girl-our-collection-desktop-1280px@2x.jpg);
   }
   .section-your-order::after {
     background-image: url(../img/your-order/element-table.png);
@@ -114,7 +114,7 @@
 
 @media screen and (min-width: 768px) {
   .image-girl-background {
-    background-image: url(../img/our-collection/table/girl-our-collection-table.jpg);
+    background-image: url(../img/our-collection/desktop-1280px/girl-our-collection-desktop-1280px.jpg);
     height: 776px;
     margin-bottom: 100px;
   }
@@ -162,10 +162,10 @@
   screen and (min-resolution: 2dppx) and (min-width: 1280px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
   .image-girl-background {
-    background-image: url(../img/our-collection/desktop-1280px/girl-our-collection-desktop-1280px.jpg);
+    background-image: url(../img/our-collection/desktop-1440px/girl-our-collection-desktop-1440px.jpg);
   }
   .section-your-order::after {
-    background-image: url(../img/our-collection/desktop-1280px/girl-our-collection-desktop-1280px@2x.jpg);
+    background-image: url(../img/our-collection/desktop-1440px/girl-our-collection-desktop-1440px@2x.jpg);
   }
 }
 
